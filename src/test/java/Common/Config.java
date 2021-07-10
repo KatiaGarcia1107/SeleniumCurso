@@ -1,0 +1,27 @@
+package Common;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Config
+{
+    public static String URL_QA = "http://automationpractice.com/index.php";
+    public static String URL_DEV = "http://automationpractice.com/index.php";
+    public static String User = "test.0@test.com";
+    public static String Password = "test1234";
+
+
+    public static WebDriver navegadorChrome ()
+    {
+        System.getProperty("webdriver.chrome.driver", "src/main/resources/Drivers/ChromeDriver/chromedriver.exe");
+        return new ChromeDriver();
+    }
+
+    public static WebDriver navegadorFirefox ()
+    {
+        System.getProperty("webdriver.firefox.driver", "src/main/resources/Drivers/FirefoxDriver/geckodriver.exe");
+        return new FirefoxDriver();
+    }
+}
+
