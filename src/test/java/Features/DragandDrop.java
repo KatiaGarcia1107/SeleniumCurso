@@ -1,20 +1,17 @@
 package Features;
 
 import Common.BaseTestTres;
-import Elements.ElementsDragAndDrop;
+import Elements.ElementsDragandDrop;
 import Utils.SeleniumUtils;
 import org.junit.Test;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.*;
+public class DragandDrop extends BaseTestTres
 
 
-public class DragAndDrop extends BaseTestTres
 {
-
     SeleniumUtils Utils = new SeleniumUtils();
-    ElementsDragAndDrop elementsDragAndDrop = new ElementsDragAndDrop();
-
+    ElementsDragandDrop elementsDragAndDrop = new ElementsDragandDrop();
     @Test
     public void dragAndDrop() throws Exception
     {
@@ -26,8 +23,8 @@ public class DragAndDrop extends BaseTestTres
                 .release()
                 .build()
                 .perform();
-
         Utils.Loading(driver,3000);
 
     }
+
 }
