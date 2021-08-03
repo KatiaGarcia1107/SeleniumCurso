@@ -1,16 +1,15 @@
 package Common;
 
 import Features.Login;
-import org.junit.Before;
 import org.junit.After;
+import org.junit.Before;
 import org.openqa.selenium.WebDriver;
-
 
 //CLASE CON DATOS REPETITIVOS
 public class BaseTest
 {
  //*****************INSTANCIAS*****************************
- public static WebDriver driver = null;
+ protected static WebDriver driver = null;
  Login Login = new Login();
 
 
@@ -18,13 +17,14 @@ public class BaseTest
  public void Login () throws Exception
  {
   //CREAR DRIVER
-  driver = Config.navegadorChrome();
+  driver = Config.navegadorFirefox();
 
   //MAXIMIXA VENTANA
   driver.manage().window().maximize();
 
   //lA FUNCION "driver.get", NOS SIRVE PARA MANDAR LA URL AL NAVEGADOR
   driver.get(Config.URL_QA);
+
 
   //POR MEDIO DEL OBJETO "login", MANDAMOS TRAER (INSTANCIAMOS) EL PROCESO DE INICIAR SESION
   Login.miLogin(driver);

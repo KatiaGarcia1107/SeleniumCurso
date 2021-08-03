@@ -8,14 +8,14 @@ import org.openqa.selenium.WebElement;
 
 public class ElementsSelects
 {
-    //ELEMENT   TAP WOMAN
+    //1ELEMENT   TAP WOMAN
     public By byTapWoman = By.xpath("//a[@title='Women']");
     public WebElement TapWoman(WebDriver driver)
     {
         WebElement tapWoman = driver.findElement(byTapWoman);
         return tapWoman;
     }
-    //ELEMENT BOTON MAS TOPS
+    //2ELEMENT BOTON MAS TOPS
     public By bybottonMasTops = By.xpath("//div/ul/li[1]/span[@class='grower CLOSE'] ");
     public WebElement BottonMasTops (WebDriver driver)
     {
@@ -23,7 +23,7 @@ public class ElementsSelects
         return bottonMasTops;
     }
 
-    //ELEMENT BOTON TSHIRTS
+    //3ELEMENT BOTON TSHIRTS
     public By bybottonTSshirts = By.xpath("//div/ul/li[1]/ul/li[1]/a[contains(text(), 'T-shirts')]");
     public WebElement BottonTSshirts (WebDriver driver)
     {
@@ -31,7 +31,7 @@ public class ElementsSelects
         return bottonTSshirts;
     }
 
-    //ELEMENT lISTA DESPLEGABLE
+    //4ELEMENT lISTA DESPLEGABLE
     public By bySelectSort = By.id("selectProductSort");
     public WebElement SelectSort (WebDriver driver)
     {

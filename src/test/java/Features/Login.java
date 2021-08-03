@@ -13,6 +13,7 @@ public class Login
 {
     ElementsLogin elementsLogin = new ElementsLogin();
     SeleniumUtils Utils = new SeleniumUtils();
+    private WebDriver driver;
 
 
     public void miLogin(WebDriver driver) throws Exception
